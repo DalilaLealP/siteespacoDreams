@@ -1,0 +1,81 @@
+body{
+    background-color: wheat;
+    
+}
+p{
+    color: brown;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    color: darkgoldenrod;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    color: darkgoldenrod;
+
+}
+.center{
+    text-align: center;
+    color: darkgoldenrod;
+}
+.galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 10px; /* Espaço entre as imagens */
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.galery img {
+    width: 100%; /* Imagens ocupam toda a largura da coluna */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem distorcer */
+    border: 2px solid #000; /* Borda preta nas imagens */
+    border-radius: 5px; /* Arredondamento opcional */
+}
+.social-media {
+    display: flex;
+    flex-direction: column; /* Organiza os links em uma coluna */
+    gap: 15px; /* Espaço entre os links */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items:center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: darkgoldenrod; /* Cor de destaque ao passar o mouse */
+}
+
+.redes-sociais i {
+    font-size: 20px;
+}
+
+.copyright::before {
+    content: "© ";  /* Adiciona o símbolo de copyright */
+  }
+  
+  .copyright {
+    font-size: 14px;      /* Tamanho da fonte */
+    color: #666;          /* Cor do texto */
+    text-align: center;    /* Alinhamento do texto */
+    margin-top: 20px;      /* Espaço superior */
+  }
+  
